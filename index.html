@@ -11,9 +11,10 @@
   </head>
 
   <body class="mdui-theme-primary-500 padding-top mdui-appbar-with-toolbar">
+	<header>
 	<div class="mdui-appbar mdui-appbar-fixed mdui-ripple">
 	  <div class="mdui-toolbar mdui-color-white">
-		<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><em class="mdui-icon material-icons">menu</em></span>
+		<span class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#main-drawer', swipe: true}"><em class="mdui-icon material-icons">menu</em></span>
 		<a href="./index.html" class="mdui-typo-title">怀仁ADD</a>
 		<div class="mdui-toolbar-spacer"></div>
 		<a class="mdui-ripple" target="_blank" href="http://qm.qq.com/cgi-bin/qm/qr?k=hvaxchwidozgreff_wqgwdc0ycuat_qw">
@@ -24,10 +25,10 @@
 		</a>
 	  </div>
 	</div>
-	<script>mdui.snackbar({ message: '网站使用条款', position: 'left-bottom' , buttonText: '了解', onButtonClick: function() { mdui.alert('网站资源来源于网络'); }});</script>
+	<script>mdui.snackbar({ message: '招募贤士', position: 'left-bottom' , buttonText: '了解', onButtonClick: function() { mdui.alert('请点击总览-关于我们-联系'); }});</script>
 	<div class="mdui-dialog" id="purchaseDialog">
 	  <div class="mdui-dialog-title">感谢您对 Initial 的支持!</div>
-	  <div class="mdui-dialog-content"><img src='images/purchase.png' height="600" class="mdui-center"></div>
+	  <div class="mdui-dialog-content mdui-typo"><img src='images/purchase.png' class="mdui-center"></div>
 	  <div class="mdui-dialog-actions">
 		<button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
 	  </div>
@@ -39,15 +40,15 @@
 		  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
 			<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">beenhere</i> 
 			<div class="mdui-list-item-content">开始</div>
-			<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+			<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-black">keyboard_arrow_down</i>
 		  </div> 
 		  <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
 			<a href="./index.html" class="mdui-list-item mdui-ripple">总览</a> <a href="./useage.html" class="mdui-list-item mdui-ripple">如何使用</a> <a href="javascript:something()" class="mdui-list-item mdui-ripple">某些东西</a></ul> </li>
-		<li class="mdui-collapse-item"> 
+		<li class="mdui-collapse-item mdui-collapse-item-open"> 
 		  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
 			<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">book</i> 
 			<div class="mdui-list-item-content">开学</div>
-			<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+			<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-black">keyboard_arrow_down</i>
 		  </div>
 		  <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">  
 			<a href="./startschool-introduce.html" class="mdui-list-item mdui-ripple">介绍</a>
@@ -55,8 +56,22 @@
 			<a href="./startschool-train.html" class="mdui-list-item mdui-ripple">军训</a>
 		  </ul>
 		</li>
+		<li class="mdui-collapse-item"> 
+		  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+			<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">local_cafe</i> 
+			<div class="mdui-list-item-content">日常</div>
+			<i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-black">keyboard_arrow_down</i>
+		  </div>
+		  <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">  
+			<a href="./routine-shop.html" class="mdui-list-item mdui-ripple">小店</a>
+			<a href="./routine-post.html" class="mdui-list-item mdui-ripple">邮政</a>
+			<a href="./routine-dortior.html" class="mdui-list-item mdui-ripple">宿舍</a>
+			<a href="./routine-bookshop.html" class="mdui-list-item mdui-ripple">书店</a>
+		  </ul>
+		</li>
 	  </div>
 	</div>
+	</header>
 	<div class="mdui-container">
 	  <div class="mdui-row">
 		<div class="mdui-col-xs-12 mdui-col-sm-6">

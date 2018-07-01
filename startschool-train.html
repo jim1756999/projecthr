@@ -10,55 +10,78 @@
 	<script src="./js/mdui.min.js"></script>
   </head>
   <body class="mdui-theme-primary-500 padding-top mdui-appbar-with-toolbar">
-	<div class="mdui-appbar mdui-appbar-fixed mdui-ripple">
-	  <div class="mdui-toolbar mdui-color-white">
-		<span class="mdui-btn mdui-btn-icon mdui-ripple mdui-ripple-white" mdui-drawer="{target: '#main-drawer', swipe: true}"><em class="mdui-icon material-icons">menu</em></span>
-		<a  href="./index.html" class="mdui-typo-title">军训</a>
-		<div class="mdui-toolbar-spacer"></div>
-		<a class="mdui-ripple" target="_blank" href="http://qm.qq.com/cgi-bin/qm/qr?k=hvaxchwidozgreff_wqgwdc0ycuat_qw">
-		  <em class="mdui-icon material-icons">group_add</em>
-		</a>
-		<a class="mdui-ripple" mdui-dialog="{target: '#purchaseDialog'}">
-		  <em class="mdui-icon material-icons">payment</em>
-		</a>
+	<header>
+	  <div class="mdui-appbar mdui-appbar-fixed mdui-ripple">
+		<div class="mdui-toolbar mdui-color-white">
+		  <span class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#main-drawer', swipe: true}"><em class="mdui-icon material-icons">menu</em></span>
+		  <a href="./index.html" class="mdui-typo-title">军训</a>
+		  <div class="mdui-toolbar-spacer"></div>
+		  <a class="mdui-ripple" target="_blank" href="http://qm.qq.com/cgi-bin/qm/qr?k=hvaxchwidozgreff_wqgwdc0ycuat_qw">
+			<em class="mdui-icon material-icons">group_add</em>
+		  </a>
+		  <a class="mdui-ripple" mdui-dialog="{target: '#purchaseDialog'}">
+			<em class="mdui-icon material-icons">payment</em>
+		  </a>
+		</div>
 	  </div>
-	</div>
-	<div class="mdui-dialog" id="purchaseDialog">
-	  <div class="mdui-dialog-title">感谢您对 Initial 的支持!</div>
-	  <div class="mdui-dialog-content"><img src='images/purchase.png' height="600" class="mdui-center"></div>
-	  <div class="mdui-dialog-actions">
-		<button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
+	  <div class="mdui-dialog" id="purchaseDialog">
+		<div class="mdui-dialog-title">感谢您对 Initial 的支持!</div>
+		<div class="mdui-dialog-content mdui-typo"><img src='images/purchase.png' class="mdui-center"></div>
+		<div class="mdui-dialog-actions">
+		  <button class="mdui-btn mdui-ripple" mdui-dialog-close>关闭</button>
+		</div>
 	  </div>
-	</div>
 
-	<div class="mdui-drawer" id="main-drawer">
-	  <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
-		<li class="mdui-collapse-item"> 
-		  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
-			<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">beenhere</i> 
-			<div class="mdui-list-item-content">开始</div>
-			<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-		  </div> 
-		  <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
-			<a href="./index.html" class="mdui-list-item mdui-ripple">总览</a> <a href="./useage.html" class="mdui-list-item mdui-ripple">如何使用</a> <a href="javascript:something()" class="mdui-list-item mdui-ripple">某些东西</a></ul> </li>
-		<li class="mdui-collapse-item mdui-collapse-item-open"> 
-		  <div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
-			<i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">book</i> 
-			<div class="mdui-list-item-content">开学</div>
-			<i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-		  </div>
-		  <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">  
-			<a href="./startschool-introduce.html" class="mdui-list-item mdui-ripple">介绍</a>
-			<a href="./startschool-things.html" class="mdui-list-item mdui-ripple">要带的东西</a>
-			<a href="./startschool-train.html" class="mdui-list-item mdui-ripple">军训</a>
-		  </ul>
-		</li>
+	  <div class="mdui-drawer mdui-color-white" id="main-drawer">
+		<div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+		  <li class="mdui-collapse-item"> 
+			<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+			  <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">beenhere</i> 
+			  <div class="mdui-list-item-content">开始</div>
+			  <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-black">keyboard_arrow_down</i>
+			</div> 
+			<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
+			  <a href="./index.html" class="mdui-list-item mdui-ripple">总览</a> <a href="./useage.html" class="mdui-list-item mdui-ripple">如何使用</a> <a href="javascript:something()" class="mdui-list-item mdui-ripple">某些东西</a></ul> </li>
+		  <li class="mdui-collapse-item mdui-collapse-item-open"> 
+			<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+			  <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">book</i> 
+			  <div class="mdui-list-item-content">开学</div>
+			  <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-black">keyboard_arrow_down</i>
+			</div>
+			<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">  
+			  <a href="./startschool-introduce.html" class="mdui-list-item mdui-ripple">介绍</a>
+			  <a href="./startschool-things.html" class="mdui-list-item mdui-ripple">要带的东西</a>
+			  <a href="./startschool-train.html" class="mdui-list-item mdui-ripple">军训</a>
+			</ul>
+		  </li>
+		  <li class="mdui-collapse-item"> 
+			<div class="mdui-collapse-item-header mdui-list-item mdui-ripple"> 
+			  <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-black">local_cafe</i> 
+			  <div class="mdui-list-item-content">日常</div>
+			  <i class="mdui-collapse-item-arrow mdui-icon material-icons mdui-text-color-black">keyboard_arrow_down</i>
+			</div>
+			<ul class="mdui-collapse-item-body mdui-list mdui-list-dense">  
+			  <a href="./routine-shop.html" class="mdui-list-item mdui-ripple">小店</a>
+			  <a href="./routine-post.html" class="mdui-list-item mdui-ripple">邮政</a>
+			  <a href="./routine-dortior.html" class="mdui-list-item mdui-ripple">宿舍</a>
+			</ul>
+		  </li>
+		</div>
 	  </div>
-	</div>
+	</header>
 	<div class="mdui-container">
 	  <div class="mdui-row">
-		<div class="mdui-col-xs-12 mdui-col-sm-6">
-
+		<div class="mdui-typo mdui-col-xs-12 mdui-col-sm-6">
+		  <h1>军训</h1>
+		  <p>其实军训没你们想的那么痛苦，也没有那么轻松。通常是开学前一周。军训的话还是最好带防晒霜，不然很可能会晒伤。军训会安排整理内务，那个基本上是休息。总得来说军训的作息时间比上课要舒服，就是训练累点。怀仁一般会安排到在树荫下训，还是可以的。</p>
+		  <img class="mdui-img-rounded mdui-shadow-3" src="./images/train1.png">
+		  <div class="mdui-typo-caption-opacity mdui-text-center">军训</div>
+		</div>
+		<div class="mdui-typo mdui-col-xs-12 mdui-col-sm-6">
+		  <h2>另外...</h2>
+		  <p>军训的时候会选一个国旗班，通常是训练强度最大的(貌似不如我们，因为碰到了一个严格的教官)。好处是可以直接申请进学生会。但是每周一升降旗都会有事，比较麻烦。还有就是有身高要求。</p>
+		  <img class="mdui-img-rounded mdui-shadow-3" src="./images/train2.png">
+		  <div class="mdui-typo-caption-opacity mdui-text-center">军训</div>
 		</div>
 	  </div>
 	  <br><br>
